@@ -10,9 +10,9 @@ export const InputSearch = ({contentInput, SearchProduct}) => {
 
         onChange={SearchProduct}
 
-        placeholder="Ingrese el producto que desea buscar"
+        placeholder="Ingrese a buscar"
 
-        className=" text-black border px-4 py-2 mb-4 rounded-md w-full max-w-md"
+        className=" text-amber-600 border px-4 py-2 mb-4 rounded-md w-full max-w-md"
 
       />
   )

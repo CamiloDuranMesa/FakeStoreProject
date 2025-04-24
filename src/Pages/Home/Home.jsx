@@ -42,8 +42,10 @@ export const Home = () => {
 
   return (
     <Main>
-      
-      <InputSearch contentInput={productInput} SearchProduct={SearchProduct} />
+      <div className='flex justify-center items-center flex-col'>
+        <InputSearch contentInput={productInput} SearchProduct={SearchProduct} />
+        <h1 className='text-black bg-amber-400 mb-[1rem] p-[1rem] rounded-2xl text-2xl'>Nuestros productos</h1>
+      </div>
       <section className='grid grid-cols-1 md:grid-cols-3 gap-4'>
         {
           products.map(products => (
