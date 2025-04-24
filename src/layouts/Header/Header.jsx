@@ -1,6 +1,6 @@
-import { NavBar } from '../NavBar/NavBar';
-import { ItemTitles } from '../../components/ItemTitles/ItemTitles';
-import { ItemNavBar } from '../../components/itemNavBar/ItemNavBar';
+import { Navbar } from '../Navbar/Navbar';
+import { ItemTitle } from '../../components/ItemTitle/ItemTitle';
+import {ItemNavbar} from  '../../components/ItemNavbar/ItemNavbar'
 
 export const Header = () => {
 
@@ -8,15 +8,15 @@ export const Header = () => {
     <header className="sticky top-0 left-0 z-50 bg-blue-700 px-6 py-5 shadow-xl w-full">
       <div className="flex items-center flex-col gap-5">
 
-        <ItemTitles content="Fake Store 🛒" styles="text-2xl sm:text-4xl text-white font-bold" />
+        <ItemTitle content="Fake Store 🛒" styles="text-2xl sm:text-4xl text-white font-bold" />
 
 
-        <NavBar>
+        <Navbar>
           <ul className='flex align-center space-x-15'>
-            <ItemNavBar route="/" content="HOME" styles="text-white text-lg" />
+            <ItemNavbar route="/" content="HOME" styles="text-white text-lg" />
 
           </ul>
-        </NavBar>
+        </Navbar>
       </div>
     </header>
   );
